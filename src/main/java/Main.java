@@ -18,6 +18,12 @@ public class Main {
         printAStar4();
         System.out.println();
         printAStar5();
+
+        //practice
+        within10and20(5,20);
+        isPositiveOrNegative(5);
+        isNegative(5);
+        printWordNTime("Some text", 5);
     }
 
     public static int summ(int a, int b) { //принимает числа и возвращает сумму
@@ -142,6 +148,37 @@ public class Main {
             }
             System.out.println();
         }
+    }
+    //practice
+    public static boolean within10and20 (int a, int b){
+        if (a+b >= 10 && a+b <=20){
+            System.out.println("true");
+            return true;
+        }else System.out.println(" not true");
+        return false;
+    }
 
+    public static void isPositiveOrNegative(int a){
+        if (a<0){
+            System.out.println("Is negative");
+        }else {
+            System.out.println("Is positive");
+        }
+    }
+
+    public static boolean isNegative(int a){
+        if (a<0){
+            System.out.println("is negative");
+            return true;
+        }else {
+            System.out.println("is positive");
+            return false;
+        }
+    }
+
+    public static void printWordNTime (String message, int a){
+        for (int i = 0; i <a ; i++) {
+            System.out.println(message);
+        }
     }
 }
